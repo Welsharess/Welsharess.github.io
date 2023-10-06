@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400&display=swap" rel="stylesheet">
+<style>
+*:not(.overflowing) {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+a {
+  z-index: 3;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 16px 0;
+	background: #232021;
+	color: #cfcce0;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+aside, section.main-container {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+}
+
+aside {
+	justify-content: flex-start;
+	overflow: hidden;
+}
+aside img {
+	aspect-ratio: 1920/1080;
+	max-height: 1080px;
+	height: 100vh;
+}
+
+section.main-container {
+	justify-content: flex-end;
+}
+
+main, .main-background {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 570px;
+}
+.main-background {
+	background: #232021;
+	opacity: 0.98;
+	height: 100%;
+	width: auto;
+	padding-right: 22px;
+	align-items: flex-start;
+}
+main {
+	align-items: center;
+}
+
+header {
+	display: flex;
+}
+.logo-container {
+	width: 191px;
+	height: 217px;
+	overflow: visible;
+	position: relative;
+}
+img.logo {
+	width: 239px;
+	height: 217px;
+	position: relative;
+	left: -9px;
+}
+hgroup {
+	padding-right: 23px;
+	// #aligning ^
+	width: auto;
+	max-width: 500px;
+	text-align: center;
+	font-weight: 500;
+	position: relative;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 19px;
+}
+hgroup h1 {
+  font-size: 52px;
+  line-height: 52px;
+  margin-top: 24px;
+}
+hgroup h2 {
+	font-size: 27px;
+	line-height: 27px;
+}
+hgroup h3 {
+	font-size: 23px;
+	line-height: 23px;
+}
+hgroup sub {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 19px;
+	position: absolute;
+	left: -40px;
+	right: 0;
+	// #aligning ^
+	text-align: right;
+}
+
+.socials-info {
+	margin-top: 85px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.socials-info h3 {
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: 300;
+}
+.social-links {
+	width: 404px;
+	display: flex;
+    flex-flow: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.square-icon {
+	margin: 10px;
+	max-width: 52px;
+	height: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.itch {
+	aspect-ratio: 132/92;
+}
+.artstation {
+	aspect-ratio: 109/99;
+}
+.behance {
+	aspect-ratio: 132/81;
+}
+.tg {
+	aspect-ratio: 120/97;
+}
+.vk {
+	aspect-ratio: 148/86;
+}
+
+.contacts-info {
+	margin-top: 72px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contacts-info h3 {
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 12px;
+}
+
+.contact {
+	margin-top: 25px;
+}
+
+.contact a {
+	font-size: 24px;
+	line-height: 24px;
+	color: #cfcce0;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+footer {
+  background-image: url("./gradient.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 293px;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1500px) {
+	.main-background {
+		margin-left: 1100px;
+		padding-left: 67px;
+		padding-right: 0;
+		flex: 1;
+	}
+}
+
+@media only screen and (max-width: 600px)  {
+	aside, section.main-container {
+		align-items: flex-start;
+	}
+	header {
+		flex-direction: column;
+	}
+	section.main-container {
+		justify-content: center;
+	}
+	main, .main-background {
+		width: auto;
+	}
+	.main-background {
+		padding: 32px 16px;
+		height: auto;
+	}
+	header {
+		align-items: center;
+	}
+	hgroup {
+		position: inherit;
+		padding: 0;
+	}
+	hgroup sub {
+		position: inherit;
+		left: unset;
+		right: unset;
+		top: unset;
+		bottom: unset;
+	}
+	
+	.square-icon {
+		max-width: 105px;
+		height: 105px;
+	}
+}
+
+</style>		
+</head>
+<body>
+	<aside class="overflowing">
+		<img class="overflowing" src="./background.jpg" alt="A collage of my works on the background" />
+	</aside>
+	<section class="main-container">
+		<div class="main-background">
+			<main>
+				<header>
+					<div class="logo-container overflowing">
+						<img class="logo overflowing" src="./logo.png" alt="my beuteful logo"/>
+					</div>
+					<hgroup>
+						<h1>Welsharess</h1>
+						<h2>Александра Иваницкая</h2>
+						<h3>2D художник иллюстратор</h3>
+						<sub class="overflowing">Специализируюсь на графике для игр</sub>
+					</hgroup>
+				</header>
+				<div class="socials-info">
+					<h3>ПОРТФОЛИО И СОЦСЕТИ:</h3>
+					<div class="social-links">
+						<div class="square-icon itch">
+							<a href="https://welsharess.itch.io/">
+								<img src="./itch.png" alt="itch.io logo"/>
+							</a>
+						</div>
+						<div class="square-icon artstation">
+							<a href="http://artstation.com/welsharess">
+								<img src="./artstation.png" alt="artstation logo"/>
+							</a>
+						</div>
+						<div class="square-icon behance">
+							<a href="https://www.behance.net/Welsharess">
+								<img src="./behance.png" alt="behance logo"/>
+							</a>
+						</div>
+						<div class="square-icon tg">
+							<a href="https://t.me/Welsharess">
+								<img src="./telegram.png" alt="telegram logo"/>
+							</a>
+						</div>
+						<div class="square-icon vk">
+							<a href="https://vk.com/welsharess">
+								<img src="./vk.png" alt="vk.com logo"/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-info">
+					<h3>Контакты:</h3>
+					<div class="contact">
+						<a href="tel:+791308854">+7 (913) 088 99 54</a>
+					</div>
+					<div class="contact">
+						<a href="mailto:welsharess@gmail.com">welsharess@gmail.com</a>
+					</div>
+				</div>
+			</main>
+		</div>
+	</section>
+	<footer class="col"	>
+	</footer>
+</body>
+</html>

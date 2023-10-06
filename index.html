@@ -195,7 +195,7 @@ hgroup sub {
 
 footer {
   background-image: url("./gradient.png");
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -213,6 +213,9 @@ footer {
 }
 
 @media only screen and (max-width: 600px)  {
+	footer {
+		display: none;
+	}
 	aside, section.main-container {
 		align-items: flex-start;
 	}
@@ -221,6 +224,7 @@ footer {
 	}
 	section.main-container {
 		justify-content: center;
+		overflow-y: auto;
 	}
 	main, .main-background {
 		width: auto;

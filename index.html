@@ -221,6 +221,15 @@ footer {
   z-index: 2;
 }
 
+@media only screen and (orientation: landscape) {
+	aside img {
+		max-height: unset;
+		height: unset;
+		width: 100vw;
+		max-width: 1920px;
+	}	
+}
+
 @media only screen and (min-width: 2500px) {
 	.main-background {
 		margin-left: 1920px;
@@ -231,10 +240,31 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-height: 602px)  {
+	section.main-container {
+		overflow-y: auto;
+		align-items: flex-start;
+	}
+	.main-background {
+		padding: 60px 16px;
+		padding-bottom: 180px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait)  {
+	section.main-container {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-height: 800px)  {
 	footer {
 		display: none;
 	}
+}
+
+@media only screen and (max-width: 800px)  {
 	aside, section.main-container {
 		align-items: flex-start;
 	}
@@ -242,7 +272,6 @@ footer {
 		flex-direction: column;
 	}
 	section.main-container {
-		justify-content: center;
 		overflow-y: auto;
 	}
 	main, .main-background {

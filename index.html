@@ -256,11 +256,38 @@ footer {
 	section.main-container {
 		justify-content: center;
 	}
+	hgroup h1 {
+		margin-bottom: 16px;
+	}
+	hgroup h2 {
+		margin-bottom: 8px;
+	}
+	hgroup h3 {
+		margin-bottom: 16px;
+	}
+	.socials-info {
+		margin-top: 32px;
+	}
+	.contacts-info {
+		margin-top: 8px;
+	}
+	.contacts-info h3 {
+		margin-bottom: 0;
+	}
+	.contact {
+		margin-top: 16px;
+	}
 }
 
 @media only screen and (max-height: 800px)  {
 	footer {
 		display: none;
+	}
+}
+
+@media only screen and (max-height: 1000px) and (max-width: 800px)  {
+	.main-background {
+		padding-bottom: 180px !important;
 	}
 }
 
@@ -282,7 +309,6 @@ footer {
 	}
 	.main-background {
 		padding: 32px 16px;
-		padding-bottom: 180px;
 		height: auto;
 		opacity: 0.9;
 	}
@@ -302,8 +328,10 @@ footer {
 	}
 	
 	.square-icon {
-		max-width: 105px;
-		height: 105px;
+		max-width: 80px;
+		height: 80px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
